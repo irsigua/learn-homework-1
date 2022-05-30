@@ -10,12 +10,13 @@
 """
 
 
-def hello_user():
+def hello_user(user_say):
     """
     Замените pass на ваш код
     """
-    pass
+    while user_say != 'Хорошо':
+        user_say = input('Как дела? ')
 
     
 if __name__ == "__main__":
-    hello_user()
+    hello_user(input('Как дела? '))
